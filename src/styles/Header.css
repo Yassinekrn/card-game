@@ -1,0 +1,76 @@
+.titleCard {
+    width: 60%;
+    height: 20%;
+    background: #313131;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.img {
+    height: 30%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+    z-index: 1;
+}
+
+.textBox {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.2s ease-in-out;
+    z-index: 2;
+}
+
+.textBox > .text {
+    font-weight: 400;
+}
+
+.textBox > .head {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.textBox > .price {
+    font-size: 17px;
+}
+
+.textBox > span {
+    font-size: 14px;
+    color: lightgrey;
+}
+
+.titleCard:hover > .img {
+    height: 65%;
+    filter: blur(7px);
+}
+
+@keyframes anim {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.centerHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
